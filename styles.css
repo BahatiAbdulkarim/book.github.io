@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header{
+    background-color: white;
+    box-shadow: 0 0 2px gray;
+    position: sticky;
+    top: 0%;
+
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 1300px;
+    margin: auto;
+}
+.navbar img{
+    width: 60px;
+    border-radius: 30px;
+}
+.country-select {
+    width: 250px;
+    margin-left: 60px;
+}
+.select i{
+    font-size: 25px;
+    transition: all 0.3s;
+
+}.select {
+    width: 100%;
+    background-color: rgba(250,250,250,0.7);
+    border-radius: 5px;
+    padding: 10px 10px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+.option {
+    display: flex;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+
+
+}
+.option:hover{
+    background-color: brown;
+}
+.option p{
+    margin-left: 20px;
+    color: rgb(10, 238, 48);
+}
+.option i{
+    color: rgb(77, 4, 161);
+}
+.option-box{
+    box-shadow: 0 0 10px;
+    background-color: aliceblue;
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+.hidden{
+    display: block;
+}
+.rotated{
+    transform: rotate(180deg);
+}
+.search_box{
+    display: flex;
+    margin-left: 30px;
+}
+.search_box i{
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    padding: 15px;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
+.searchclass{
+    padding: 10px;
+    width: 400px;
+    font-size: 15px;
+    border: solid black;
+    border-radius: 6px 0 0 6px;
+}
+#eng_tag{
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 25px;
+
+}
+.hin_eng{
+    background-color: white;
+    box-shadow: 0 0 10px green;
+    width: 200px;
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+.hin_eng li{
+    list-style: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+
+}
+.hin_eng li:hover{
+    background-color: brown;
+
+}
+.display_div{
+    display: block;
+}
+.message i{
+    font-size: 42px;
+    color: rgb(95, 7, 238);
+    cursor: pointer;
+    margin-left: 25px;
+}
+.man_image img{
+    width: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 55px;
+}
+.nameandimg img{
+width: 65px;
+border-radius: 50%;
+}
+.nameandimg p{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.nameandimg{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px;
+}
+.dropdown{
+    width: 250px;
+    box-shadow: 0 0 10px green;
+    padding: 15px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+.dropdown ul li{
+    display: flex;
+    padding: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.dropdown ul li:hover{
+    background-color: brown;
+}
+.dropdown ul{
+    margin-top: 20px;
+}
+.dropdown ul li i{
+    color: blueviolet;
+    font-size: 17px;
+
+}
+.dropdown ul li p{
+    margin-left: 10px;
+    font-size: 17px;
+}
+.block_div{
+    display: block;
+}
+.selling_page button{
+    margin-left: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-top-color: green;
+    border-left-color: rgb(90, 14, 233);
+    border-right-color: rgb(211, 9, 9);
+    border-bottom-color: rgb(241, 227, 18);
+    font-size: 15px;
+    cursor: pointer;
+    padding: 6px 12px;
+    margin-top: 0%;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    display: flex;
+  
+}
+
+/*------------------------------ * ad 1 * ----------------------------------*/
+
+.ad_img img{
+    width: 600px;
+    z-index: -1;
+    position: relative;
+
+}
+.ad_img{
+    width: 600px;
+    margin: auto;
+    margin-top: 15px;
+    height: 400px;
+    position: relative;
+}
+.ad_img i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    color: red;
+    font-size: 25px;
+    cursor: pointer;
+
+
+
+    /*------------------------------ * product * ----------------------------------*/
+}
+.first_row{
+    display: flex;
+    justify-content: space-evenly;
+    width: 1200px;
+    margin: auto;
+    margin-top: 35px;
+}
+.box img{
+    width: 230px;
+
+}
+.box{
+    border: 1px solid white;
+    height: 230px;
+    width: 230px;
+    cursor: pointer;
+}
+.box:hover{
+    border: 1px solid saddlebrown;
+}
+.box a{
+    text-decoration: none;
+    color: black;
+}
+.box h2{
+    padding: 5px 0 0 20px;
+}
+.box p{
+    padding: 0 0 10px 20px;
+    color: blue;
+    font-size: 14px;
+
+}
+.address{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+.address p{
+    font-size: 11px;
+    margin-right: 101px;
+}
+.load_more button{
+margin: 50px auto;
+padding: 6px 16px;
+border-radius: 6px;
+background-color: aqua;
+display: block;
+cursor: pointer;
+font-size: 16px;
+transition:all 0.3s;
+}
+.load_more button:hover{
+    border: 4px solid black;
+
+}
+.load_more_products{
+    display: none;
+    
+}
+.ads_img2{
+    width: 400px;
+    margin: auto;
+    margin-top: 35px;
+    height: 300px;
+    position: relative;
+}
+.ads_img2 img{
+    width: 400px;
+    border: 1px solid black;
+    position: relative;
+    z-index: 1;
+
+}
+.ads_img2 i{
+    border: none;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: 2;
+    font-size: 30px;
+    color: brown;
+    cursor: pointer;
+}
+
+
+    /*------------------------------ * download * ----------------------------------*/
+.download_app{
+    background-color: white;
+
+
+}
+.download{
+    display: flex;
+    margin: 10px 0 0 0;
+    align-items: center;
+}
+.image{
+    width: 300px;
+
+}
+.text{
+    border-right: 2px solid slateblue ;
+}
+.text h1{
+    font-size: 35px;
+    padding: 20px 20px 10px 20px;
+}
+.text p{
+    padding: 10px 20px 20px 20px;
+    font-size: 20px;
+    color: red;
+} 
+.download_store p{
+    padding: 20px 20px 20px 0;
+    font-weight: bold;
+    font-size: 17;
+
+}
+.download_store{
+    padding-left: 30px;
+}
+.download_store img{
+    width: 140px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+
+    /*------------------------------ * download * ----------------------------------*/
+.main_footer{
+    background-color: rgb(211, 165, 165);
+
+    border-bottom: 5px solid rgb(237, 233, 241);
+    margin-bottom: 30px;
+    margin-top: 20px;
+    
+    border-top: 5px solid rgb(130, 9, 243);
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 1200px;
+}
+.footer_box h2{
+font-size: 17px;
+margin: 8px 0 8px 0;
+cursor: pointer;
+}
+.footer_box p{
+    font-size: 17px;
+margin: 5px 0 5px 0;
+cursor: pointer;
+}

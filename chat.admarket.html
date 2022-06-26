@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chat box </title>
+    <link rel="stylesheet" href="chat.admarket.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+
+    
+    <!------------------------------ * navbar * ---------------------------------->
+    
+    <div class="header">
+
+
+        
+    <!------------------------------ * navbar * ---------------------------------->
+
+
+
+
+
+        <div class="navbar">
+            <img src="images/bahati.jpg">
+            <div class="country-select" id="country">
+                <div class="select">
+                    <p id="text">Select your country</p>
+                    <i class="fa fa-chevron-down" id="moving"></i>
+
+                </div>
+                <Ul class="option-box" id="list">
+                    <li class="option" onclick="myfunction('UGANDA')">
+                        <i class="fa fa-map-marker"></i>
+                        <p>UGANDA</p>
+
+                    </li>
+                    <li class="option" onclick="myfunction('KENYA')">
+                        <i class="fa fa-map-marker"></i>
+                        <p>KENYA</p>
+
+                    </li>
+                    <li class="option" onclick="myfunction('TANZANIA')">
+                        <i class="fa fa-map-marker"></i>
+                        <p>TANZANIA</p>
+                    </li>
+                    <li class="option" onclick="myfunction('RWANDA')">
+                        <i class="fa fa-map-marker"></i>
+                        <p>RWANDA</p>
+
+                    </li>
+                    <li class="option" onclick="myfunction('BURUNDI')">
+                        <i class="fa fa-map-marker"></i>
+                        <p>BURUNDI</p>
+
+                    </li>
+                </Ul>
+
+            </div>
+
+            <div class="search_box">
+                <input type="text" class="searchclass" id="searchid" placeholder="Find mobile phones,cars,TV's,motocycles and more">
+                <p><i class="fa fa-search"></i></p>
+
+
+
+
+
+
+            </div>
+
+            <div class="language">
+                <p id ="eng_tag"> English </p>
+                <ul class="hin_eng" >
+                    <li onclick="languageadmarket('English')">English</li>
+                    <li onclick="languageadmarket('Kiswahili')">Kiswahili</li>
+                </ul>
+            </div>
+            <div class="message">
+                <i class="fa fa-comment-o"></i>
+            </div>
+            <div class="message">
+                <i class="fa fa-bell-o"></i>
+            </div>
+
+            <div class="your_logo">
+                <div class="man_image" id="man_img_id">
+                    <img src="images/bahati.jpg">
+
+                    <div class="dropdown" id="dropdown_id">
+                        <div class="nameandimg">
+                            <img src="images/bahati.jpg">
+                            <p>Bahati Abdulkarim</p>
+                        </div>
+                        <ul>
+                            <hr>
+                            <li><i class="fa fa-user-circle-o"></i><p>My Account</p></li>
+                            <li><i class="fa fa-archive"></i><p>My Orders</p></li>
+                            <hr>
+
+                                <li><i class="fa fa-question-circle-o"></i><p>Help</p></li>
+                                <li><i class="fa fa-cog" aria-hidden="true"></i><p>Settings</p></li>
+                                <hr>
+                                <li><i class="fa fa-arrow-circle-o-right"></i><p>Logout</p></li>
+                                <hr>
+
+                        </ul>
+                   </div>
+
+                    
+                </div>
+            </div>
+<div class="selling_page">
+    <button>
+        <i class="fa fa-plus-circle"></i>
+        <p>SELL</p>
+    </button>
+</div>
+
+</div>
+</div>
+
+<div class="chat_box">
+    <div class="heading_chatbox">
+        <div class="image_name_chat">
+            <img src="images/bahati.jpg">
+            <h2> Bahati Abdulkarim</h2>
+        </div>
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+
+    <div class="see_chat">
+        <h3 id="message"></h3>
+    </div>
+    <div class="send_message">
+        <input type="text" placeholder="Type a message" id="text_message">
+        <input type="text" placeholder="Type a message" id="reply">
+        <i class="fa fa-paper-plane" id="send_message"></i>
+    </div>
+</div>
+
+
+<script>
+    
+        // =============================== * navbar * ========================================
+
+        let country = document.getElementById('country');
+        let moving = document.getElementById('moving');
+        let text = document.getElementById('text');
+        let list = document.getElementById('list');
+
+        country.addEventListener('click', () =>{
+            list.classList.toggle('hidden');
+            moving.classList.toggle('rotated')
+      
+        });
+
+        function myfunction(omkar){
+            text.innerHTML = omkar;
+        }
+let eng_tag = document.getElementById('eng_tag');
+let hin_eng = document.querySelector('.hin_eng');
+let language = document.querySelector('.language');
+
+
+language.addEventListener('click', () =>{
+    hin_eng.classList.toggle('display_div');
+});
+function languageadmarket (any){
+    eng_tag.innerHTML = any;
+}
+let man_img_id = document.getElementById('man_img_id');
+let dropdown_id = document.getElementById('dropdown_id');
+
+man_img_id.addEventListener('click', () =>{
+    dropdown_id.classList.toggle('block_div')
+});
+
+
+
+
+        // =============================== * send message * ========================================
+
+let send_message = document.getElementById('send_message');
+let message = document.getElementById('message');
+let text_message = document.getElementById('text_message');
+let reply = document.getElementById('reply');
+
+
+send_message.addEventListener('click', () =>{
+    message.innerHTML = text_message.value;
+    message.style = 'display: block';
+    text_message.value = reply.value;
+
+
+
+
+});
+
+
+
+
+</script>
+    
+</body>
+</html>
